@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<meta name="format-detection" content="telephone=no" />
+<meta name="viewport"
+	content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width" />
+<title>Snapchat</title>
+<script type="text/javascript" src="cordova.js"></script>
+<link href="css/style.css" rel='stylesheet' type='text/css' />
+</head>
+<body onload="onLoad()" onresize="onResize()">
+<script>
+ 
+
+var admobid = {};
+if( /(android)/i.test(navigator.userAgent) ) { 
+    admobid = { // for Android
+        banner: 'ca-app-pub-2373638997110870/1831405944',
+        interstitial: 'ca-app-pub-2373638997110870/4784872348'
+    };
+} else if(/(ipod|iphone|ipad)/i.test(navigator.userAgent)) {
+    admobid = { // for iOS
+        banner: 'ca-app-pub-2373638997110870/1831405944',
+        interstitial: 'ca-app-pub-2373638997110870/4784872348'
+    };
+} else {
+    admobid = { // for Windows Phone
+        banner: 'ca-app-pub-2373638997110870/1960026745',
+        interstitial: 'ca-app-pub-2373638997110870/3436759948'
+    };
+}
+
+if(( /(ipad|iphone|ipod|android|windows phone)/i.test(navigator.userAgent) )) {
+    document.addEventListener('deviceready', initApp, false);
+} else {
+    initApp();
+}
+
+function initApp() {
+    if (! AdMob ) { alert( 'admob plugin not ready' ); return; }
+
+    AdMob.createBanner( {
+        adId: admobid.banner, 
+        isTesting: true,
+        overlap: false, 
+        offsetTopBar: false, 
+        position: AdMob.AD_POSITION.BOTTOM_CENTER,
+        bgColor: 'black'
+    } );
+    
+    AdMob.prepareInterstitial({
+        adId: admobid.interstitial,
+        autoShow: true
+    });
+}
+   
+</script>
+	<div id="fullpage">
+	<b><h2>	Snapchat BLOG</h2><b>
+		<br><br>
+		<h1>Snapchat Stories celebrate the power of different perspectives. It’s a totally unique way to experience what’s happening all over the world through the eyes of our community.
+
+<br>Sometimes what’s happening goes beyond the Snaps we’ve curated into a Story. Today, we’re introducing Story Explorer.
+
+Story Explorer relies on technology developed by our research team to provide more depth to every Snap in a Story.<br> When you see a moment that inspires or excites you, simply swipe up to see more Snaps of that same moment - from every perspective.
+
+<br>It’s the first time you’ll be able to experience that incredible game-winning dunk from thousands of perspectives throughout the stadium - or feel like you’re right there on the scene when breaking news unfolds. 
+
+<br>Our community makes this possible by sharing Snaps in the moment and contributing so many diverse perspectives - a huge thank you to Snapchatters everywhere for making this dream a reality!
+
+<br>We’re launching Story Explorer on the New York and Los Angeles Live Stories today - with plans to roll out this technology across many more Stories very soon!
+
+<br>Happy Exploring!.</h1><br><br><br>
+<img title="odd even scheme " src="http://delmondo.co/wp-content/uploads/2015/08/14.10.13_Snapchat_photo_leak-1840x814.jpg" alt="oSnapchat ">
+	<br>
+	<br>
+	
+	<iframe width="250" height="315" src="https://www.youtube.com/embed/-e2EulozwGI" frameborder="0" allowfullscreen></iframe>
+	
+	<br><br>
+	
+	<h3>Snapchat has always celebrated the way that you and your friends see the world. It’s fun to experience different perspectives through Snaps, Stories and Our Story. 
+
+<br>Today we’re introducing Discover.
+
+<br>Snapchat Discover is a new way to explore Stories from different editorial teams. It’s the result of collaboration with world-class leaders in media to build a storytelling format that puts the narrative first. This is not social media.
+
+<br>Social media companies tell us what to read based on what’s most recent or most popular. We see it differently. We count on editors and artists, not clicks and shares, to determine what’s important.
+
+<br>Discover is different because it has been built for creatives. All too often, artists are forced to accommodate new technologies in order to distribute their work. This time we built the technology to serve the art: each edition includes full screen photos and videos, awesome long form layouts, and gorgeous advertising.
+
+<br>Discover is new, but familiar. That’s because Stories are at the core - there’s a beginning, middle, and end so that editors can put everything in order. Every edition is refreshed after 24 hours - because what’s news today is history tomorrow.
+
+<br>Discover is fun and easy to use. Tap to open an edition, swipe left to browse Snaps, or swipe up on a Snap for more. Each channel brings you something unique – a wonderful daily surprise!
+
+<br>Happy Discovering!
+
+<br>Love,
+
+<br>Team Snapchat<br>
+<img title="odd even scheme " src="https://www.snapchat.com/images/Icon_100px.png" alt="snap ">
+<br>
+<iframe width="250" height="315" src="https://www.youtube.com/embed/guGvV8LCx7o" frameborder="0" allowfullscreen></iframe>
+<br>
+ <h3>
+ <b>
+Want to say something? <br>
+Rate and Review or Drop a suggestion Mail - pictodeveloper@gmail.com</b>
+ 
+</h3>
+	</div>
+</body>
+<body background="bg10.jpg">
+</html>
